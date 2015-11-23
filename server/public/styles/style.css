@@ -1,0 +1,71 @@
+body {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #6cbffe;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: 2px 2px #fff;
+}
+
+p {
+  font-size: 30px;
+  text-shadow: 2px 2px #f0f;
+}
+
+main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.previous, .next {
+  padding: 10px;
+  width: 15%;
+  box-sizing: padding-box;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #15cca2;
+  overflow: hidden;
+}
+
+.student {
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 35%;
+  height: 50px;
+  background-color: #93f4a3;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+aside p {
+  text-shadow: 2px 2px #0ff;
+  color: #ff0;
+  display: inline;
+  width: 15%;
+  margin: 30px;
+  background-color: #00f;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer p {
+  font-size: 1em;
+  text-shadow: 0 0;
+  margin-right: auto;
+  margin-left: auto;
+}

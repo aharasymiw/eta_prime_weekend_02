@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel="stylesheet" href="/styles/style.css">
-	<script type="text/javascript" src="/vendors/jquery.min.js"></script>
-	<script type="text/javascript" src="/vendors/handlebars.min.js"></script>
-        <script type="text/javascript" src="/scripts/app.js"></script>
-    </head>
-    <body>
-    </body>
+<html lang = 'en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Eta Weekend Challenge 02</title>
+    <link rel = 'icon' href = 'favicon.png' type = 'image/png'>
+    <link rel = 'stylesheet' href = '/styles/reset.css'>
+    <link rel = 'stylesheet' href = '/styles/style.css'>
+    <script type = 'text/javascript' src = '/vendors/jquery.min.js'></script>
+    <script type = 'text/javascript' src = '/vendors/handlebars.min.js'></script>
+    <script type = 'text/javascript' src = '/scripts/app.js'></script>
+  </head>
 
+  <body>
+
+    <header>
+      <h1>Student Movies</h1>
+    </header>
+
+    <div id = 'peopleHook'>
+    </div>
+    <div id = 'movieHook'>
+    </div>
+
+    <script id = 'people-template' type = 'text/x-handlebarsbars-template'>
+      <main>
+        <section class = 'previous'>
+          <p>{{prevFirstName}}</p>
+          <p>{{prevLastName}}</p>
+        </section>
+
+        <section class = 'student'>
+          <p>{{firstName}} {{lastName}}</p>
+        </section>
+
+        <section class = 'next'>
+          <p>{{NextFirstName}}</p>
+          <p>{{NextLastName}}</p>
+        </section>
+      </main>
+    </script>
+
+    <script id = 'movie-template' type = 'text/x-handlebarsbars-template'>
+      <aside>
+        {{#each favoriteMovies}}
+          <p>{{movieName}}</p>
+        {{/each}}
+      </aside>
+    </script>
+
+    <footer>
+      <p>&#169; Andrew Harasymiw, 2015</p>
+    </footer>
+  </body>
 </html>
