@@ -32,7 +32,12 @@ function populatePeople(data, current) {
   };
 
   var peopleHtml = peopleTemplate(peopleContext);
-  $('#peopleHook').html(peopleHtml);
+
+  $('#peopleHook').fadeOut('slow', function() {
+    $('#peopleHook').delay(1000).html(peopleHtml);
+  });
+
+  $('#peopleHook').fadeIn();
 }
 
 function populateMovies(data, current) {
@@ -40,7 +45,12 @@ function populateMovies(data, current) {
   var movieTemplate = Handlebars.compile(movieSource);
 
   var movieHtml = movieTemplate(data[current]);
-  $('#movieHook').html(movieHtml);
+
+  $('#movieHook').fadeOut('slow', function() {
+    $('#movieHook').delay(1000).html(movieHtml);
+  });
+
+  $('#movieHook').fadeIn();
 }
 
 function populate(data, current) {
