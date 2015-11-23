@@ -25,17 +25,19 @@
     <script id = 'people-template' type = 'text/x-handlebarsbars-template'>
       <main>
         <section class = 'previous'>
-          <p>{{prevFirstName}}</p>
-          <p>{{prevLastName}}</p>
+          <h2>{{prevFirstName}}</h2>
+          <h2>{{prevLastName}}</h2>
+          <p>previous</p>
         </section>
 
         <section class = 'student'>
-          <p>{{firstName}} {{lastName}}</p>
+          <h2>{{firstName}} {{lastName}}</h2>
         </section>
 
         <section class = 'next'>
-          <p>{{NextFirstName}}</p>
-          <p>{{NextLastName}}</p>
+          <h2>{{NextFirstName}}</h2>
+          <h2>{{NextLastName}}</h2>
+          <p>next</p>
         </section>
       </main>
     </script>
@@ -43,7 +45,7 @@
     <script id = 'movie-template' type = 'text/x-handlebarsbars-template'>
       <aside>
         {{#each favoriteMovies}}
-          <p>{{movieName}}</p>
+          <h2>{{movieName}}</h2>
         {{/each}}
       </aside>
     </script>
