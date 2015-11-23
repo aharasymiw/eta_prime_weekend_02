@@ -64,6 +64,7 @@ $(function() {
     url:'/data/eta.json',
   }) .done(function(json) {
 
+    var timer = 10000;
     var data = json.eta;
     var current = returnRand(0, data.length - 1);
 
@@ -77,6 +78,7 @@ $(function() {
       }
 
       populate(data, current);
+      timer = 10000;
     });
 
     $('body').on('click', '.next', function() {
@@ -87,7 +89,14 @@ $(function() {
       }
 
       populate(data, current);
+      timer = 10000;
     });
+
+    setInterval(function() {
+      $('.next').delay(timer).click();
+
+    }, timer);
+
   });
 
 });
